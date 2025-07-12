@@ -16,15 +16,7 @@ export const ventaCrearSchema = Joi.object({
             "any.required": "El campo 'idCliente' es obligatorio."
         }),
 
-    total: Joi
-        .number()
-        .positive()
-        .required()
-        .messages({
-            "number.base": "El campo 'total' debe ser un número.",
-            "number.positive": "El campo 'total' debe ser un número positivo.",
-            "any.required": "El campo 'total' es obligatorio."
-        })
+    
 
 });
 
@@ -41,11 +33,5 @@ export const ventaActualizarSchema = Joi.object({
             "number.positive": "El campo 'id_cliente' debe ser un número positivo.",
         }),
 
-    total: Joi
-        .number()
-        .positive()
-        .messages({
-            "number.base": "El campo 'total' debe ser un número.",
-            "number.positive": "El campo 'total' debe ser un número positivo.",
-        })
+    
 });
