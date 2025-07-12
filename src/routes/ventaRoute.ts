@@ -109,9 +109,7 @@ route.get('/:id', authMiddleware, buscarVentaPorId);
  *               idCliente:
  *                 type: integer
  *                 example: 3
- *               total:
- *                 type: number
- *                 example: 200.50
+ *               
  *     responses:
  *       201:
  *         description: Venta creada exitosamente
